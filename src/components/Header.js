@@ -6,11 +6,11 @@ const Header = () => {
         <nav className='py-5 bg-slate-100'>
             <Link
                 to='/'
-                className='text-slate-500 text-xl font-semibold px-8 py-5 hover:text-orange-600 hover:border-b-2 hover:border-orange-600'
+                className='text-slate-500 text-xl font-semibold px-8 py-5 hover:text-orange-600 hover:border-b-2 hover:border-orange-600 active:border-orange-600'
             >Home</Link>
             <Link
                 to='/reviews'
-                className='text-slate-500 text-xl font-semibold px-8 py-5 hover:text-orange-600 hover:border-b-2 hover:border-orange-600'
+                className='text-slate-500 text-xl font-semibold px-8 py-5 hover:text-orange-600 hover:border-b-2 hover:border-orange-600 active:border-orange-600'
             >Reviews</Link>
             <Link
                 to='/dashboard'
