@@ -5,6 +5,7 @@ import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 import Reviews from './components/Reviews';
 import Main from './layout/Main';
+import { reviewsDataLoader } from './loaders/ReviewsDataLoader';
 
 function App() {
   const router = createBrowserRouter([
@@ -18,6 +19,7 @@ function App() {
         },
         {
           path: '/reviews',
+          loader: reviewsDataLoader,
           element: <Reviews></Reviews>
         },
         {
