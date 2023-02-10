@@ -15,6 +15,7 @@ function App() {
       children: [
         {
           path: '/',
+          loader: reviewsDataLoader,
           element: <Home></Home>
         },
         {
