@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blogs from './components/Blogs';
 import Dashboard from './components/Dashboard';
+import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
 import Reviews from './components/Reviews';
 import Main from './layout/Main';
@@ -25,6 +26,7 @@ function App() {
         },
         {
           path: '/dashboard',
+          loader: async () => fetch('data.json'),
           element: <Dashboard></Dashboard>
         },
         {
@@ -32,6 +34,10 @@ function App() {
           element: <Blogs></Blogs>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <ErrorPage></ErrorPage>
     }
   ])
   return (
