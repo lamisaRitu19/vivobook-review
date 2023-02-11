@@ -18,7 +18,7 @@ const Home = () => {
 
     return (
         <div className='px-32'>
-            <section className='grid grid-cols-2 gap-4 mb-16'>
+            <section className='md:grid grid-cols-2 gap-4 mb-16'>
                 <div className='mt-16 mr-8'>
                     <h1 className='text-6xl font-bold text-orange-600 mb-6'>ASUS Vivobook 15</h1>
                     <h1 className='text-7xl font-semibold mb-6'>Your best laptop</h1>
@@ -36,7 +36,7 @@ const Home = () => {
             </section>
             <section>
                 <h1 className='font-semibold text-5xl mb-8'>Reviews</h1>
-                <div className='grid grid-cols-3 gap-4 mb-8'>
+                <div className='md:grid grid-cols-3 gap-4 mb-8'>
                     {
                         randomIndices.map(randomIndex => <Review
                             key={reviews[randomIndex]._id}

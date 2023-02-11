@@ -5,7 +5,7 @@ import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, T
 const Dashboard = () => {
     const data = useLoaderData();
     return (
-        <div className='px-32 pt-10 pb-12 grid grid-cols-3 gap-6'>
+        <div className='px-32 pt-10 pb-12 md:grid grid-cols-3 gap-6'>
             <LineChart width={400} height={400} data={data}>
                 <Line dataKey="sell"></Line>
                 <Line dataKey="revenue"></Line>
